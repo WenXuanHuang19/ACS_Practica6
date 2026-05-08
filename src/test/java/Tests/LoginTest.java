@@ -9,7 +9,7 @@ public class LoginTest extends Base {
 
     // TC01 - Positivo
     @Test
-    public void tc01_loginExitosoConCredencialesValidas() {
+    public void loginExitosoConCredencialesValidas() {
         System.out.println("[TC01] Iniciando: login con credenciales válidas");
         LoginPage loginPage = new LoginPage(driver, wait);
         loginPage.open();
@@ -21,7 +21,7 @@ public class LoginTest extends Base {
 
     // TC02 - Negativo
     @Test
-    public void tc02_loginConContrasenaIncorrecta() {
+    public void loginConContrasenaIncorrecta() {
         System.out.println("[TC02] Iniciando: login con contraseña incorrecta");
         LoginPage loginPage = new LoginPage(driver, wait);
         loginPage.open();
@@ -33,7 +33,7 @@ public class LoginTest extends Base {
 
     // TC03 - Negativo
     @Test
-    public void tc03_loginConCamposVacios() {
+    public void loginConCamposVacios() {
         System.out.println("[TC03] Iniciando: login con campos vacíos");
         LoginPage loginPage = new LoginPage(driver, wait);
         loginPage.open();
@@ -45,7 +45,7 @@ public class LoginTest extends Base {
 
     // TC04 - Validación de Interfaz
     @Test
-    public void tc04_verificarElementosDelFormularioDeLogin() {
+    public void verificarElementosDelFormularioDeLogin() {
         System.out.println("[TC04] Iniciando: verificación de elementos del formulario de login");
         LoginPage loginPage = new LoginPage(driver, wait);
         loginPage.open();

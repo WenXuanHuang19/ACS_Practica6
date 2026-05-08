@@ -16,7 +16,7 @@ public class InventoryTest extends Base {
 
     // TC05 - Positivo
     @Test
-    public void tc05_agregarPrimerProductoAlCarrito() {
+    public void agregarPrimerProductoAlCarrito() {
         System.out.println("[TC05] Iniciando: agregar primer producto al carrito");
         loginAsStandardUser();
         InventoryPage inventoryPage = new InventoryPage(driver, wait);
@@ -28,7 +28,7 @@ public class InventoryTest extends Base {
 
     // TC06 - Validación de Interfaz
     @Test
-    public void tc06_verificarTituloYElementosPaginaInventario() {
+    public void verificarTituloYElementosPaginaInventario() {
         System.out.println("[TC06] Iniciando: verificación de título y elementos del inventario");
         loginAsStandardUser();
         InventoryPage inventoryPage = new InventoryPage(driver, wait);
@@ -41,7 +41,7 @@ public class InventoryTest extends Base {
 
     // TC07 - Navegación
     @Test
-    public void tc07_navegarAlDetalleDeUnProducto() {
+    public void navegarAlDetalleDeUnProducto() {
         System.out.println("[TC07] Iniciando: navegación al detalle de un producto");
         loginAsStandardUser();
         InventoryPage inventoryPage = new InventoryPage(driver, wait);
@@ -53,7 +53,7 @@ public class InventoryTest extends Base {
 
     // TC08 - Navegación
     @Test
-    public void tc08_navegarAlCarritoDesdeBarraDeNavegacion() {
+    public void navegarAlCarritoDesdeBarraDeNavegacion() {
         System.out.println("[TC08] Iniciando: navegación al carrito desde la barra de navegación");
         loginAsStandardUser();
         InventoryPage inventoryPage = new InventoryPage(driver, wait);

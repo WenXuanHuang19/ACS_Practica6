@@ -21,7 +21,7 @@ public class CheckoutTest extends Base {
 
     // TC13 - Navegación
     @Test
-    public void tc13_navegarAlCheckoutDesdeElCarrito() {
+    public void navegarAlCheckoutDesdeElCarrito() {
         System.out.println("[TC13] Iniciando: navegación al checkout desde el carrito");
         navigateTo("https://www.saucedemo.com/");
         new LoginPage(driver, wait).login("standard_user", "secret_sauce");
@@ -36,7 +36,7 @@ public class CheckoutTest extends Base {
 
     // TC14 - Positivo
     @Test
-    public void tc14_completarCheckoutConDatosValidos() {
+    public void completarCheckoutConDatosValidos() {
         System.out.println("[TC14] Iniciando: completar checkout con datos válidos");
         loginAddProductAndGoToCheckout();
         CheckoutPage checkoutPage = new CheckoutPage(driver, wait);
@@ -53,7 +53,7 @@ public class CheckoutTest extends Base {
 
     // TC15 - Negativo
     @Test
-    public void tc15_checkoutConCamposVaciosMuestraError() {
+    public void checkoutConCamposVaciosMuestraError() {
         System.out.println("[TC15] Iniciando: checkout con campos vacíos");
         loginAddProductAndGoToCheckout();
         CheckoutPage checkoutPage = new CheckoutPage(driver, wait);
@@ -65,7 +65,7 @@ public class CheckoutTest extends Base {
 
     // TC16 - Validación de Interfaz
     @Test
-    public void tc16_verificarElementosDelFormularioDeCheckout() {
+    public void verificarElementosDelFormularioDeCheckout() {
         System.out.println("[TC16] Iniciando: verificación de elementos del formulario de checkout");
         loginAddProductAndGoToCheckout();
         CheckoutPage checkoutPage = new CheckoutPage(driver, wait);

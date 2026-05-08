@@ -18,7 +18,7 @@ public class CartTest extends Base {
 
     // TC09 - Positivo
     @Test
-    public void tc09_verificarQueProductoApareceEnElCarrito() {
+    public void verificarQueProductoApareceEnElCarrito() {
         System.out.println("[TC09] Iniciando: verificar que el producto aparece en el carrito");
         navigateTo("https://www.saucedemo.com/");
         loginAddProductAndGoToCart();
@@ -31,7 +31,7 @@ public class CartTest extends Base {
 
     // TC10 - Negativo
     @Test
-    public void tc10_eliminarProductoDelCarritoYVerificarQueDesaparece() {
+    public void eliminarProductoDelCarritoYVerificarQueDesaparece() {
         System.out.println("[TC10] Iniciando: eliminar producto del carrito y verificar que desaparece");
         navigateTo("https://www.saucedemo.com/");
         loginAddProductAndGoToCart();
@@ -44,7 +44,7 @@ public class CartTest extends Base {
 
     // TC11 - Validación de Interfaz
     @Test
-    public void tc11_verificarElementosVisiblesEnPaginaCarrito() {
+    public void verificarElementosVisiblesEnPaginaCarrito() {
         System.out.println("[TC11] Iniciando: verificación de elementos visibles en la página del carrito");
         navigateTo("https://www.saucedemo.com/");
         loginAddProductAndGoToCart();
@@ -58,7 +58,7 @@ public class CartTest extends Base {
 
     // TC12 - Navegación
     @Test
-    public void tc12_regresarAlInventarioDesdeElCarrito() {
+    public void regresarAlInventarioDesdeElCarrito() {
         System.out.println("[TC12] Iniciando: regresar al inventario desde el carrito");
         navigateTo("https://www.saucedemo.com/");
         loginAddProductAndGoToCart();
