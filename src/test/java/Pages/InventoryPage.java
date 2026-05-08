@@ -44,11 +44,6 @@ public class InventoryPage {
         }
     }
 
-    public String getFirstProductName() {
-        List<WebElement> names = driver.findElements(productNames);
-        return names.isEmpty() ? "" : names.get(0).getText();
-    }
-
     public void clickFirstProduct() {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(productNames));
         driver.findElements(productNames).get(0).click();
